@@ -21,6 +21,9 @@ bin/testPoint2D: testPoint2D.cpp Point2D.o
 Shape.o: Shape.cpp Shape.h Point2D.h
 	g++ -c Shape.cpp
 
+Circle.o: Circle.cpp Circle.h Shape.h Point2D.h
+	g++ -c Circle.cpp
+
 clean:	
 	rm -r *.o *.gch *.pch bin
 
